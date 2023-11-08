@@ -9,7 +9,7 @@ modules:[
   ssr: true,
   app: {
     head: {
-      title: 'hbhalli.com | Order veggies today',
+      title: 'Order veggies today',
       htmlAttrs: {
         lang: 'en',       
       },
