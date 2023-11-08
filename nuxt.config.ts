@@ -23,6 +23,10 @@ modules:[
           content: '7am vegetables delivery, everyday!',
         },
         { name: 'format-detection', content: 'telephone=no' },
+        { hid: 'og-image', property: 'og:image',
+  content: 'https://davangere.vercel.app/hbh.png'
+},
+
       ],
       script: [
         { 
