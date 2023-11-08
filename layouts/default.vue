@@ -1,0 +1,26 @@
+
+<script>
+import Header from "../components/Header.vue";
+export default {
+  components: {
+    Header,
+  },
+};
+</script>
+
+<template>
+<div class="container mx-auto max-w-6xl text-zinc-600">
+  <Header/>
+  <NuxtPage/>
+</div>
+</template>
+
+
+<style>
+
+body {
+background: white;}
+
+
+</style>
+
