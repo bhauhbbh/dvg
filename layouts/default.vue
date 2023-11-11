@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-<div class="container mx-auto max-w-6xl text-zinc-600">
+<div class="container mx-auto max-w-6xl">
   <Header/>
   <NuxtPage/>
 </div>

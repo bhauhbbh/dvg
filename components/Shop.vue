@@ -1,21 +1,28 @@
 <template>
-  <div class="container mx-auto" style="background-color: rgb(244, 246, 251);">
+  <div class="container mx-auto" style="background-color:#F8FAFC">
     <div>
 
 <div class="sticky top-14 z-50 bg-white">
-<div class="tabs font-kannada">
+<div class="tabs font-kannada items-center">
   <a class="tab tab-bordered py-7 md:lg:py-8 content-center text-slate-900 text-lg font-semibold" :class="{ 'tab-active text-green-600': activeTab === 'Tab1' }" @click="changeTab('Tab1')"> <img src="/carrot.png" alt="ತರಕಾರಿ" class="h-7 w-7 mr-2 grayscale opacity-90" :class="{ 'grayscale-0 opacity-100': activeTab === 'Tab1' }" @click="changeTab('Tab1')"> ತರಕಾರಿ</a>
   <a class="tab tab-bordered py-7 md:lg:py-8 content-center text-slate-900 text-lg font-semibold" :class="{ 'tab-active text-green-600': activeTab === 'Tab2' }" @click="changeTab('Tab2')"> <img src="/organic.png" alt="ಸೊಪ್ಪು" class="h-8 w-8 mr-2 grayscale opacity-90" :class="{ 'grayscale-0 opacity-100': activeTab === 'Tab2' }" @click="changeTab('Tab1')"> ಸೊಪ್ಪು</a>
-  <a class="tab tab-bordered py-7 md:lg:py-8 content-center text-slate-900 text-lg font-semibold" :class="{ 'tab-active text-green-600': activeTab === 'Tab3' }" @click="changeTab('Tab3')"> <img src="/shopping-cart.png" alt="Cart" class="h-8 w-8 mr-2 grayscale opacity-90" :class="{ 'grayscale-0 opacity-100': activeTab === 'Tab3' }" @click="changeTab('Tab1')"> Cart <span v-if="cartItems.length"
-              class="absolute bg-green-600 text-gray-100 px-2 py-1 text-xs font-bold align-middle rounded-full top-1 -right-3">{{
-                cartItems.length }}</span></a>
+ 
+ 
+  <a class="bg-orange-400 rounded-full tab text-slate-900 text-lg font-semibold border-none mb-1 ml-2" style="line-height: 2.2;" 
+        :class="{ 'tab-active text-green-600': activeTab === 'Tab3' }"
+        @click="changeTab('Tab3')">
+        <span :class="{ 'grayscale-0 opacity-100 ': activeTab === 'Tab3' }"
+          @click="changeTab('Tab1')"> 🛒 </span> <span
+          class="ml-3">{{cartItems.length }}
+      </span>
+  </a>
 </div>
 </div>
 
 
 <div v-if="activeTab === 'Tab1'">
       <!-- Content for Tab 1 -->
-      <div class="grid grid-cols-2 gap-3 p-3 md:gap-4 lg:gap-4 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-5">
+      <div class="grid grid-cols-2 gap-2 p-3 md:gap-4 lg:gap-4 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-5">
           <ProductItem v-for="product in kilogramProducts" :key="product.id" :product="product" :cartItems="cartItems"
             @add-to-cart="addToCart" @remove-from-cart="removeFromCart" />
         </div>
@@ -29,7 +36,7 @@
     </div>
     <div v-if="activeTab === 'Tab3'">
       <!-- Content for Tab 3 -->
-      <div class=" bg-white">
+      <div class=" bg-white font-poppins">
           <div v-if="cartItems.length">
             <div class="relative p-3 flex-auto">
               <div class="mb-3">Minimum order amount is : <span class="font-bold">₹ {{ minCartValue }}</span></div>
@@ -46,7 +53,7 @@
 
                   <tbody>
                     <tr v-for="(item, index) in cartItems" :key="item.id" class="border-b border-gray-300 h-9">
-                      <td>{{ item.title }} · ₹{{ item.price }}</td>
+                      <td> <span class="font-kannada"> {{ item.title }}</span> · <span class="font-poppins">₹{{ item.price }}</span> </td>
                       <td class="text-left">
                         {{ item.isKilogram ? `${item.selectedQuantity} kg` : `${item.selectedQuantity}` }}
                       </td>
@@ -636,11 +643,7 @@ export default {
   line-height: 2.7; /* Adjust this value as needed to center the text */
 }
 
-.tab.tab-active:not(.tab-disabled):not([disabled]) {
 
-  /* border-color:#059669; */
-  border-bottom-width: 3px ;
-}
 /* .tab {
   background-color: white;
   color: green;

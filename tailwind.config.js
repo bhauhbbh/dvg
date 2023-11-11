@@ -13,8 +13,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'kannada': ['Noto Sans Kannada']
+        'kannada': ['Noto Sans Kannada'],
+        'poppins': ['Poppins']
       },
+      colors: {
+      'gogreen' : '#448c3a'
+      }
+
     },
   },
   plugins: [require("daisyui","flowbite/plugin")],
