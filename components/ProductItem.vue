@@ -73,7 +73,7 @@
           @click="toggleCart"
           class="flex w-full whitespace-nowrap items-center mt-4 justify-center rounded-full py-1 text-center font-semibold md:text-md font-poppins"
           :class="
-            isInCart ? 'bg-red-100 text-red-600 hover:bg-red-100 hover:text-red-600' : 'ring-2 ring-gogreen ring-inset text-black hover:bg-gogreen'
+            isInCart ? 'bg-red-100 text-red-600 hover:bg-red-100 hover:text-red-600' : 'ring-2 ring-gogreen ring-inset text-black md:lg:hover:bg-gogreen'
           "
         > 
           {{ isInCart ? 'Remove' : 'Add' }}
