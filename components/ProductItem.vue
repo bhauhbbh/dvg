@@ -19,8 +19,10 @@
       <div class="mt-2 p-4 md:lg:mt-4 md:lg:px-5 md:lg:pb-6">
           <h5 class="text-base tracking-tight font-bold font-kannada text-gray-900">
             {{ product.title }}
-          </h5>       
-        <div class="mt-2 mb-3 lg:md:mb-5 flex items-center justify-between">
+          </h5>  
+          
+               
+        <div class="mt-2 lg:md:mb-5 flex items-center justify-between">
       
             <span class="text-lg md:lg:text-xl font-bold text-gogreen font-poppins"
               >₹{{ product.price }}</span>
@@ -64,20 +66,16 @@
             </select>
           </div>
         </div>
-      
+    </div>
 
-<!-- begitables ends -->
-      </div>
+
         <button
           @click="toggleCart"
-          class="flex w-full whitespace-nowrap items-center justify-center rounded-full py-1 my-2 text-center font-semibold md:text-md font-poppins"
+          class="flex w-full whitespace-nowrap items-center mt-4 justify-center rounded-full py-1 text-center font-semibold md:text-md font-poppins"
           :class="
             isInCart ? 'bg-red-100 text-red-600 hover:bg-red-100 hover:text-red-600' : 'ring-2 ring-gogreen ring-inset text-black hover:bg-gogreen'
           "
-        >
-        <div class="md:lg:block">
-          </div>
-          
+        > 
           {{ isInCart ? 'Remove' : 'Add' }}
         </button>
       </div>
