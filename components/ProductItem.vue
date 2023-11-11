@@ -70,9 +70,9 @@
       </div>
         <button
           @click="toggleCart"
-          class="flex w-full whitespace-nowrap items-center justify-center rounded-full py-1 my-2 text-center font-semibold hover:bg-gogreen md:text-md font-poppins"
+          class="flex w-full whitespace-nowrap items-center justify-center rounded-full py-1 my-2 text-center font-semibold hover:bg-gogreen hover:text-white md:text-md font-poppins"
           :class="
-            isInCart ? 'bg-red-100 text-black hover:bg-red-500' : 'ring-2 ring-gogreen ring-inset text-black'
+            isInCart ? 'bg-red-100 text-red-600 hover:bg-red-500' : 'ring-2 ring-gogreen ring-inset text-black'
           "
         >
         <div class="md:lg:block">
