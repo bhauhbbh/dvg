@@ -36,12 +36,12 @@
     </div>
     <div v-if="activeTab === 'Tab3'">
       <!-- Content for Tab 3 -->
-      <div class=" bg-white font-poppins">
+      <div class="bg-white font-poppins ">
           <div v-if="cartItems.length">
             <div class="relative p-3 flex-auto">
               <div class="mb-3 text-black">Minimum order amount is : <span class="font-bold">₹ {{ minCartValue }}</span></div>
               <div class="bg-white rounded-lg">
-                <table class="w-full text-black text-md font-normal">
+                <table class="w-full md:lg:max-w-xl text-black text-md font-normal">
                   <thead class="bg-gray-200 text-slate-700">
                     <tr>
                       <th class="text-left">Item</th>
