@@ -8,7 +8,7 @@
   </div>
 
   <div class="">
-    <NuxtLink to="/about" class="btn info btn-link text-white content-center font-semibold text-base focus:ring-violet-300 font-kannada">ಹೆಚ್ಚಿನ ಮಾಹಿತಿ</NuxtLink>
+    <NuxtLink to="/about" class="btn info btn-link text-black content-center font-semibold text-base focus:ring-violet-300 font-kannada">ಹೆಚ್ಚಿನ ಮಾಹಿತಿ</NuxtLink>
   </div>
 </div>
 </template>
