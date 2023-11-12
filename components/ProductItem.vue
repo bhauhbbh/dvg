@@ -5,10 +5,11 @@
     >
       <a class="relative rounded-t-md flex overflow-hidden">
         <!-- <img :src="`${product.image}`" class="object-cover" /> -->
-        <nuxt-img
-        :src="`${product.image}`"
+        <nuxt-img 
+        :src="`${product.image}`" :placeholder="[250, 200]"
         :alt="`${product.title}`"
-        height="400" width="500"
+        sizes="100vw sm:50vw md:400px"
+        
 />
           
         <span
