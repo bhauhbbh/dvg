@@ -2,44 +2,50 @@
   <div class="container mx-auto" style="background-color:#F8FAFC">
     <div>
 
-<div class="sticky top-14 z-50 bg-white">
-<div class="tabs font-kannada items-center">
-  <a class="tab tab-bordered py-7 md:lg:py-8 content-center text-slate-900 text-lg font-semibold" :class="{ 'tab-active text-green-600': activeTab === 'Tab1' }" @click="changeTab('Tab1')"> <img src="/carrot.png" alt="ತರಕಾರಿ" class="h-7 w-7 mr-2 grayscale opacity-90" :class="{ 'grayscale-0 opacity-100': activeTab === 'Tab1' }" @click="changeTab('Tab1')"> ತರಕಾರಿ</a>
-  <a class="tab tab-bordered py-7 md:lg:py-8 content-center text-slate-900 text-lg font-semibold" :class="{ 'tab-active text-green-600': activeTab === 'Tab2' }" @click="changeTab('Tab2')"> <img src="/organic.png" alt="ಸೊಪ್ಪು" class="h-8 w-8 mr-2 grayscale opacity-90" :class="{ 'grayscale-0 opacity-100': activeTab === 'Tab2' }" @click="changeTab('Tab1')"> ಸೊಪ್ಪು</a>
- 
- 
-  <a class="bg-orange-400 rounded-full tab text-slate-900 text-lg font-semibold border-none mb-1 ml-2" style="line-height: 2.2;" 
-        :class="{ 'tab-active text-green-600': activeTab === 'Tab3' }"
-        @click="changeTab('Tab3')">
-        <span :class="{ 'grayscale-0 opacity-100 ': activeTab === 'Tab3' }"
-          @click="changeTab('Tab1')"> 🛒 </span> <span
-          class="ml-3">{{cartItems.length }}
-      </span>
-  </a>
-</div>
-</div>
+      <div class="sticky top-14 z-50 bg-white">
+        <div class="tabs font-kannada items-center">
+          <a class="tab tab-bordered py-7 md:lg:py-8 content-center text-slate-900 text-lg font-semibold"
+            :class="{ 'tab-active text-green-600': activeTab === 'Tab1' }" @click="changeTab('Tab1')"> <img
+              src="/carrot.png" alt="ತರಕಾರಿ" class="h-7 w-7 mr-2 grayscale opacity-90"
+              :class="{ 'grayscale-0 opacity-100': activeTab === 'Tab1' }" @click="changeTab('Tab1')"> ತರಕಾರಿ</a>
+          <a class="tab tab-bordered py-7 md:lg:py-8 content-center text-slate-900 text-lg font-semibold"
+            :class="{ 'tab-active text-green-600': activeTab === 'Tab2' }" @click="changeTab('Tab2')"> <img
+              src="/organic.png" alt="ಸೊಪ್ಪು" class="h-8 w-8 mr-2 grayscale opacity-90"
+              :class="{ 'grayscale-0 opacity-100': activeTab === 'Tab2' }" @click="changeTab('Tab1')"> ಸೊಪ್ಪು</a>
 
 
-<div v-if="activeTab === 'Tab1'">
-      <!-- Content for Tab 1 -->
-      <div class="grid grid-cols-2 gap-2 p-3 md:gap-4 lg:gap-4 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-5">
+          <a class="bg-orange-400 rounded-full tab text-slate-900 text-lg font-semibold border-none mb-1 ml-2"
+            style="line-height: 2.2;" :class="{ 'tab-active text-green-600': activeTab === 'Tab3' }"
+            @click="changeTab('Tab3')">
+            <span :class="{ 'grayscale-0 opacity-100 ': activeTab === 'Tab3' }" @click="changeTab('Tab1')"> 🛒 </span>
+            <span class="ml-3">{{ cartItems.length }}
+            </span>
+          </a>
+        </div>
+      </div>
+
+
+      <div v-if="activeTab === 'Tab1'">
+        <!-- Content for Tab 1 -->
+        <div class="grid grid-cols-2 gap-2 p-3 md:gap-4 lg:gap-4 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-5">
           <ProductItem v-for="product in kilogramProducts" :key="product.id" :product="product" :cartItems="cartItems"
             @add-to-cart="addToCart" @remove-from-cart="removeFromCart" />
         </div>
-    </div>
-    <div v-if="activeTab === 'Tab2'">
-      <!-- Content for Tab 2 -->
-      <div class="grid grid-cols-2 gap-2 p-3 md:gap-4 lg:gap-4 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-5">
+      </div>
+      <div v-if="activeTab === 'Tab2'">
+        <!-- Content for Tab 2 -->
+        <div class="grid grid-cols-2 gap-2 p-3 md:gap-4 lg:gap-4 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-5">
           <ProductItem v-for="product in unitProducts" :key="product.id" :product="product" :cartItems="cartItems"
             @add-to-cart="addToCart" @remove-from-cart="removeFromCart" />
         </div>
-    </div>
-    <div v-if="activeTab === 'Tab3'">
-      <!-- Content for Tab 3 -->
-      <div class="bg-white font-poppins ">
+      </div>
+      <div v-if="activeTab === 'Tab3'">
+        <!-- Content for Tab 3 -->
+        <div class="bg-white font-poppins ">
           <div v-if="cartItems.length">
             <div class="relative p-3 flex-auto">
-              <div class="mb-3 text-black">Minimum order amount is : <span class="font-bold">₹ {{ minCartValue }}</span></div>
+              <div class="mb-3 text-black">Minimum order amount is : <span class="font-bold">₹ {{ minCartValue }}</span>
+              </div>
               <div class="bg-white rounded-lg">
                 <table class="w-full md:lg:max-w-xl text-black text-md font-normal">
                   <thead class="bg-gray-200 text-slate-700">
@@ -53,7 +59,8 @@
 
                   <tbody>
                     <tr v-for="(item, index) in cartItems" :key="item.id" class="border-b border-gray-300 h-9">
-                      <td> <span class="font-kannada"> {{ item.title }}</span> · <span class="font-poppins">₹{{ item.price }}</span> </td>
+                      <td> <span class="font-kannada"> {{ item.title }}</span> · <span class="font-poppins">₹{{ item.price
+                      }}</span> </td>
                       <td class="text-left">
                         {{ item.isKilogram ? `${item.selectedQuantity} kg` : `${item.selectedQuantity}` }}
                       </td>
@@ -87,17 +94,19 @@
 
 
 
-                  <div class="flex flex-col place-items-start">
+                <div class="flex flex-col place-items-start">
 
-                    <button @click="orderViaWhatsApp" class="text-white bg-green-700 font-bold py-2 px-4 rounded-full mb-4" :class="{ 'opacity-50 cursor-not-allowed': parseFloat(calculateTotalPrice()) < 250, }"
-                  :disabled="parseFloat(calculateTotalPrice()) < minCartValue">
+                  <button @click="orderViaWhatsApp" class="text-white bg-green-700 font-bold py-2 px-4 rounded-full mb-4"
+                    :class="{ 'opacity-50 cursor-not-allowed': parseFloat(calculateTotalPrice()) < 250, }"
+                    :disabled="parseFloat(calculateTotalPrice()) < minCartValue">
                     Order on whatsapp
-                   </button>
+                  </button>
 
-                    <button type="button" v-on:click="activeTab = 'Tab1'" class="bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-full">
+                  <button type="button" v-on:click="activeTab = 'Tab1'"
+                    class="bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-full">
                     Keep shopping
-                    </button>
-                
+                  </button>
+
                 </div>
 
               </div>
@@ -124,17 +133,11 @@
                   <img src="/empty-cart.webp" class="h-56" alt="">
                 </div>
                 <div class="mt-4">
-                  <button class="whitespace-nowrap btn text-white bg-blue-600 border-0 p-2 rounded-md font-semibold"
-                    type="button" v-on:click="activeTab = 'Tab1'">
-                    <svg fill="#ffffff" height="24px" width="24px" version="1.1" id="Capa_1"
-                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                      viewBox="0 0 26.676 26.676" xml:space="preserve">
-                      <g>
-                        <path
-                          d="M26.105,21.891c-0.229,0-0.439-0.131-0.529-0.346l0,0c-0.066-0.156-1.716-3.857-7.885-4.59   c-1.285-0.156-2.824-0.236-4.693-0.25v4.613c0,0.213-0.115,0.406-0.304,0.508c-0.188,0.098-0.413,0.084-0.588-0.033L0.254,13.815   C0.094,13.708,0,13.528,0,13.339c0-0.191,0.094-0.365,0.254-0.477l11.857-7.979c0.175-0.121,0.398-0.129,0.588-0.029   c0.19,0.102,0.303,0.295,0.303,0.502v4.293c2.578,0.336,13.674,2.33,13.674,11.674c0,0.271-0.191,0.508-0.459,0.562   C26.18,21.891,26.141,21.891,26.105,21.891z" />
-                      </g>
-                    </svg>
-                    Back to shop
+                  <button type="button" v-on:click="activeTab = 'Tab1'"
+                    class="bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-full">
+                    <NuxtLink class="whitespace-nowrap" to="/">
+                      Back to shopping
+                    </NuxtLink>
                   </button>
                 </div>
               </div>
@@ -142,7 +145,7 @@
 
           </div>
         </div>
-    </div>
+      </div>
 
     </div>
   </div>
@@ -475,7 +478,8 @@ export default {
 }
 
 .tab {
-  line-height: 2.7; /* Adjust this value as needed to center the text */
+  line-height: 2.7;
+  /* Adjust this value as needed to center the text */
 }
 
 
