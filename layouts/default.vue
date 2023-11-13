@@ -12,6 +12,7 @@ export default {
 <div class="container mx-auto max-w-6xl border-x">
   <Header/>
   <NuxtPage/>
+  <Footer/>
 </div>
 </template>
 
