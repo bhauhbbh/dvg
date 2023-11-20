@@ -32,7 +32,7 @@
             @add-to-cart="addToCart" @remove-from-cart="removeFromCart" />
         </div>
       </div>
-      <div v-if="activeTab === 'Tab2'">
+      <div v-show="activeTab === 'Tab2'">
         <!-- Content for Tab 2 -->
         <div class="grid grid-cols-2 gap-2 p-3 md:gap-4 lg:gap-4 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-5">
           <ProductItem v-for="product in unitProducts" :key="product.id" :product="product" :cartItems="cartItems"
