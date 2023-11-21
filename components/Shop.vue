@@ -14,13 +14,20 @@
               :class="{ 'grayscale-0 opacity-100': activeTab === 'Tab2' }" @click="changeTab('Tab1')"> ಸೊಪ್ಪು</a>
 
 
-          <a class="bg-orange-400 rounded-full tab text-slate-900 text-lg font-semibold border-none mb-1 ml-2"
-            style="line-height: 2.2;" :class="{ 'tab-active text-green-600': activeTab === 'Tab3' }"
-            @click="changeTab('Tab3')">
-            <span :class="{ 'grayscale-0 opacity-100 ': activeTab === 'Tab3' }" @click="changeTab('Tab1')"> 🛒 </span>
-            <span class="ml-3">{{ cartItems.length }}
-            </span>
-          </a>
+
+          <button
+            class="flex py-1 px-4 relative bg-orange-400 border-2 border-transparent text-gray-800 rounded-full focus:outline-none transition duration-150 ease-in-out"
+            aria-label="Cart" :class="{ 'tab-active text-green-600': activeTab === 'Tab3' }" @click="changeTab('Tab3')">
+            <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+              </path>
+            </svg>
+            <span class="text-md font-semibold font-poppins ml-2"> {{ cartItems.length }}</span>
+          </button>
+
+
         </div>
       </div>
 
@@ -493,5 +500,4 @@ export default {
   background-color: green;
   color: white;
 } */
-/* Add your styling for ProductItem and other elements here */
-</style>
+/* Add your styling for ProductItem and other elements here */</style>
