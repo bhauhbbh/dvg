@@ -14,7 +14,8 @@ export default {
     extend: {
       fontFamily: {
         'kannada': ['Noto Sans Kannada'],
-        'poppins': ['Poppins']
+        'poppins': ['Poppins'],
+        'roboto': ['Roboto']
       },
       colors: {
       'gogreen' : '#448c3a'

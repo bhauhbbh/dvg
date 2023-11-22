@@ -170,6 +170,26 @@
                     Order on whatsapp
                   </button>
 
+                  <div
+                    v-if="parseFloat(calculateTotalPrice()) < minCartValue"
+                    class="alert alert-warning bg-yellow-50 border border-yellow-400 rounded text-yellow-800 text-sm p-2 flex justify-between mb-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="stroke-current shrink-0 h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                      />
+                    </svg>
+                    <span>Minimum Order Amount is ₹ {{ minCartValue }}</span>
+                  </div>
+
                   <button
                     type="button"
                     v-on:click="activeTab = 'Tab1'"
@@ -225,6 +245,7 @@
 
 <script>
 import ProductItem from "~/components/ProductItem.vue";
+import productsData from "/products.json";
 
 export default {
   components: {
@@ -237,208 +258,7 @@ export default {
       tab: ["Tab1"],
       activeTab: "Tab1",
       minCartValue: 250,
-      products: [
-        {
-          id: 1,
-          title: "ಈರುಳ್ಳಿ",
-          price: 35.0,
-          image: "onion.webp",
-          selectedQuantity: 1,
-          isKilogram: true,
-          priceCut: 8,
-        },
-        {
-          id: 2,
-          title: "ಮೆಣಸಿನಕಾಯಿ",
-          price: 58.0,
-          image: "chilli.webp",
-          selectedQuantity: 1,
-          isKilogram: true,
-          priceCut: 10,
-        },
-        {
-          id: 3,
-          title: "ಮೆಣಸಿನಕಾಯಿ(ದಪ್ಪ)",
-          price: 58.0,
-          image: "chilli2.webp",
-          selectedQuantity: 1,
-          isKilogram: true,
-          priceCut: 10,
-        },
-        {
-          id: 4,
-          title: "ಟೊಮೊಟೊ ",
-          price: 10.0,
-          image: "tomato.webp",
-          selectedQuantity: 1,
-          isKilogram: true,
-          priceCut: 12,
-        },
-        {
-          id: 5,
-          title: "ಆಲೂಗಡ್ಡೆ ",
-          price: 38.0,
-          image: "potato.webp",
-          selectedQuantity: 1,
-          isKilogram: true,
-          priceCut: 10,
-        },
-        {
-          id: 6,
-          title: "ಬದನೆಕಾಯಿ",
-          price: 38.0,
-          image: "brinjal.webp",
-          selectedQuantity: 1,
-          isKilogram: true,
-          priceCut: 8,
-        },
-        {
-          id: 7,
-          title: "ಮೂಲಂಗಿ(4)",
-          price: 19.0,
-          image: "radish.webp",
-          selectedQuantity: 1,
-          isKilogram: false,
-          priceCut: 9,
-        },
-        {
-          id: 8,
-          title: "ಬೀಟ್ರೂಟ್",
-          price: 58.0,
-          image: "beetroot.webp",
-          selectedQuantity: 1,
-          isKilogram: true,
-          priceCut: 10,
-        },
-        {
-          id: 9,
-          title: "ಬೆಂಡೆಕಾಯಿ",
-          price: 28.0,
-          image: "bendekai.webp",
-          selectedQuantity: 1,
-          isKilogram: true,
-          priceCut: 12,
-        },
-        {
-          id: 10,
-          title: "ಹೂಕೋಸು",
-          price: 36.0,
-          image: "cauliflower.webp",
-          selectedQuantity: 1,
-          isKilogram: true,
-          priceCut: 5,
-        },
-        {
-          id: 11,
-          title: "ಎಲೆಕೋಸು",
-          price: 35.0,
-          image: "cabbage.webp",
-          selectedQuantity: 1,
-          isKilogram: true,
-          priceCut: 5,
-        },
-        {
-          id: 12,
-          title: "ಹೀರೆಕಾಯಿ",
-          price: 38.0,
-          image: "heerekai.webp",
-          selectedQuantity: 1,
-          isKilogram: true,
-          priceCut: 6,
-        },
-        {
-          id: 13,
-          title: "ಸೌತೆಕಾಯಿ",
-          price: 38.0,
-          image: "cucmber.webp",
-          selectedQuantity: 1,
-          isKilogram: true,
-          priceCut: 6,
-        },
-        {
-          id: 14,
-          title: "ಕ್ಯಾರೆಟ್",
-          price: 68.0,
-          image: "carrot.webp",
-          selectedQuantity: 1,
-          isKilogram: true,
-          priceCut: 2,
-        },
-        {
-          id: 15,
-          title: "ಕರಿಬೇವು",
-          price: 5.0,
-          image: "karibevu.webp",
-          selectedQuantity: 1,
-          isKilogram: false,
-          priceCut: 8,
-        },
-        {
-          id: 16,
-          title: "ಸಬ್ಬಸಿಗೆ",
-          price: 5.0,
-          image: "sabbe.webp",
-          selectedQuantity: 1,
-          isKilogram: false,
-          priceCut: 5,
-        },
-        {
-          id: 17,
-          title: "ಕೊತ್ತಂಬರಿ",
-          price: 5.0,
-          image: "kottambari.webp",
-          selectedQuantity: 1,
-          isKilogram: false,
-          priceCut: 5,
-        },
-        {
-          id: 18,
-          title: "ಮೆಂತ್ಯೆ",
-          price: 5.0,
-          image: "mente.webp",
-          selectedQuantity: 1,
-          isKilogram: false,
-          priceCut: 5,
-        },
-        {
-          id: 19,
-          title: "ಪುದಿನ",
-          price: 8.0,
-          image: "pudina.webp",
-          selectedQuantity: 1,
-          isKilogram: false,
-          priceCut: 5,
-        },
-        {
-          id: 20,
-          title: "ಪಾಲಕ್",
-          price: 5.0,
-          image: "palak.webp",
-          selectedQuantity: 1,
-          isKilogram: false,
-          priceCut: 5,
-        },
-        {
-          id: 21,
-          title: "ಹಸಿ ಶುಂಠಿ",
-          price: 10.0,
-          image: "shunti.webp",
-          selectedQuantity: 1,
-          isKilogram: false,
-          priceCut: 5,
-        },
-        {
-          id: 22,
-          title: "ನಿಂಬೆಹಣ್ಣು(3)",
-          price: 10.0,
-          image: "lemon.webp",
-          selectedQuantity: 1,
-          isKilogram: false,
-          priceCut: 5,
-        },
-
-        // Add more products here
-      ],
+      products: productsData,
       cartItems: [],
     };
   },
