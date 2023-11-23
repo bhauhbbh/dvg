@@ -1,10 +1,10 @@
 <template>
   <div class="container mx-auto" style="background-color: #f8fafc">
     <div>
-      <div class="sticky top-14 z-50 bg-white">
+      <div class="sticky top-14 mb-4 z-50 bg-slate-200">
         <div class="tabs font-kannada items-center">
           <a
-            class="tab tab-bordered py-7 md:lg:py-8 content-center text-slate-900 text-lg font-semibold"
+            class="tab py-7 md:lg:py-8 content-center text-slate-900 text-lg font-semibold border-b-4 border-gray-300"
             :class="{ 'tab-active': activeTab === 'Tab1' }"
             @click="changeTab('Tab1')"
           >
@@ -15,11 +15,12 @@
               :class="{ 'grayscale-0 opacity-100': activeTab === 'Tab1' }"
               @click="changeTab('Tab1')"
             />
-            ತರಕಾರಿ</a
-          >
+            ತರಕಾರಿ
+          </a>
+
           <a
-            class="tab tab-bordered py-7 md:lg:py-8 content-center text-slate-900 text-lg font-semibold"
-            :class="{ 'tab-active': activeTab === 'Tab2' }"
+            class="tab py-7 md:lg:py-8 content-center text-slate-900 text-lg font-semibold border-b-4 border-gray-300"
+            :class="{ 'tab-active border-b-4': activeTab === 'Tab2' }"
             @click="changeTab('Tab2')"
           >
             <img
@@ -33,7 +34,7 @@
           >
 
           <button
-            class="flex py-1 px-4 relative bg-orange-400 border-2 border-transparent text-gray-800 rounded-full focus:outline-none transition duration-150 ease-in-out"
+            class="flex py-1 px-4 relative mb-2 bg-orange-400 border-2 border-transparent text-gray-800 rounded-full focus:outline-none transition duration-150 ease-in-out ml-5"
             aria-label="Cart"
             :class="{ 'tab-active': activeTab === 'Tab3' }"
             @click="changeTab('Tab3')"
@@ -352,28 +353,11 @@ export default {
 </script>
 
 <style>
-.tab button {
-  border: none;
-  background-color: #1e69fd;
-  /* Add other styles for non-active tabs */
+.tab.tab-active:not(.tab-disabled):not([disabled]) {
+  border-color: #448c3a;
 }
 
-.tab button.active {
-  background-color: #ff0b48;
-  color: #000;
-  /* Add other styles for active tabs */
-}
-
-.tab {
-  line-height: 2.7;
-}
-
-/* .tab {
-  background-color: white;
-  color: green;
-}
-
-
+/*
 .tab.tab-active {
   background-color: green;
   color: white;
