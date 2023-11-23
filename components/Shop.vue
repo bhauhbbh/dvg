@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto" style="background-color: #f8fafc">
     <div>
-      <div class="sticky top-14 mb-4 z-50 bg-slate-200">
+      <div class="sticky top-16 mb-4 z-50 bg-slate-200">
         <div class="tabs font-kannada items-center">
           <a
             class="tab py-7 md:lg:py-8 content-center text-slate-900 text-lg font-semibold border-b-4 border-gray-300"
