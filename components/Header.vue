@@ -15,6 +15,9 @@
       >
     </div>
   </div>
+  <div>
+    <p class="font-kannada p-2 bg-gogreen text-white text-center">ಇಂದಿನಿಂದ ಪ್ರಾರಂಭ!</p>
+  </div>
 </template>
 
 <style scoped></style>
