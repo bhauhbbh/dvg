@@ -202,7 +202,9 @@
               </div>
               <div class="divider"></div>
 
-              <div class="flex items-center my-10 justify-center bg-white">
+              <div
+                class="hidden sm:block md:block lg:block xl:block flex items-center my-10 justify-center bg-white"
+              >
                 <p class="text-center text-xl">
                   If you are on pc/laptop, login to whatsapp web & click on
                   <span class="font-bold">Continue to Chat</span>
