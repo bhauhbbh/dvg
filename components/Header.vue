@@ -15,9 +15,7 @@
       >
     </div>
   </div>
-  <div>
-    <p class="font-kannada p-2 bg-gogreen text-white text-center">ಇಂದಿನಿಂದ ಪ್ರಾರಂಭ!</p>
+  <div class="bg-gogreen p-2 text-white font-bold text-center">
+    <span class="font-kannada font-bold">ತರಕಾರಿ ಡೆಲಿವರಿ ಸಮಯ : ಬೆಳಗ್ಗೆ 7 ಗಂಟೆಗೆ</span>
   </div>
 </template>
-
-<style scoped></style>
