@@ -1,273 +1,272 @@
 [
-    {
-       "id": 1,
-       "title": "ಈರುಳ್ಳಿ(ಪೂನಾ)",
-       "price": 65,
-       "image": "onion.webp",
-       "selectedQuantity": 1,
-       "isKilogram": true,
-       "priceCut": 8
-    },
-    {
-      "id": 2,
-      "title": "ಈರುಳ್ಳಿ",
-      "price": 58,
-      "image": "onion2.webp",
-      "selectedQuantity": 1,
-      "isKilogram": true,
-      "priceCut": 8
-   },
-    {
-       "id": 3,
-       "title": "ಮೆಣಸಿನಕಾಯಿ(ಕಡ್ಡಿ)",
-       "price": 48,
-       "image": "chilli.webp",
-       "selectedQuantity": 1,
-       "isKilogram": true,
-       "priceCut": 10
-    },
-    {
-       "id": 4,
-       "title": "ಮೆಣಸಿನಕಾಯಿ(ದಪ್ಪ)",
-       "price": 50,
-       "image": "chilli2.webp",
-       "selectedQuantity": 1,
-       "isKilogram": true,
-       "priceCut": 10
-    },
-    {
-       "id": 5,
-       "title": "ಟೊಮೊಟೊ ",
-       "price": 25,
-       "image": "tomato.webp",
-       "selectedQuantity": 1,
-       "isKilogram": true,
-       "priceCut": 12
-    },
-    {
-       "id": 6,
-       "title": "ಆಲೂಗಡ್ಡೆ ",
-       "price": 40,
-       "image": "potato.webp",
-       "selectedQuantity": 1,
-       "isKilogram": true,
-       "priceCut": 10
-    },
-    {
-       "id": 7,
-       "title": "ಬದನೆಕಾಯಿ(ಕೆಂಪು)",
-       "price": 20,
-       "image": "brinjal.webp",
-       "selectedQuantity": 1,
-       "isKilogram": true,
-       "priceCut": 8
-    },
-    {
-       "id": 8,
-       "title": "ಮೂಲಂಗಿ(3)",
-       "price": 20,
-       "image": "radish.webp",
-       "selectedQuantity": 1,
-       "isKilogram": false,
-       "priceCut": 9
-    },
-    {
-      "id": 9,
-      "title": "ಬದನೆಕಾಯಿ(ಹಸಿರು)",
-      "price": 45,
-      "image": "badane2.webp",
-      "selectedQuantity": 1,
-      "isKilogram": true,
-      "priceCut": 2
-   },
- 
-    {
-       "id": 10,
-       "title": "ಬೆಂಡೆಕಾಯಿ",
-       "price": 35,
-       "image": "bendekai.webp",
-       "selectedQuantity": 1,
-       "isKilogram": true,
-       "priceCut": 12
-    },
-    {
-       "id": 11,
-       "title": "ಹೂಕೋಸು",
-       "price": 30,
-       "image": "cauliflower.webp",
-       "selectedQuantity": 1,
-       "isKilogram": true,
-       "priceCut": 5
-    },
-    {
-       "id": 12,
-       "title": "ಎಲೆಕೋಸು(1)",
-       "price": 30,
-       "image": "cab.webp",
-       "selectedQuantity": 1,
-       "isKilogram": false,
-       "priceCut": 5
-    },
-    {
-       "id": 13,
-       "title": "ಹೀರೆಕಾಯಿ",
-       "price": 38,
-       "image": "heerekai.webp",
-       "selectedQuantity": 1,
-       "isKilogram": true,
-       "priceCut": 6
-    },
-    {
-       "id": 14,
-       "title": "ಸೌತೆಕಾಯಿ",
-       "price": 38,
-       "image": "cucmber.webp",
-       "selectedQuantity": 1,
-       "isKilogram": true,
-       "priceCut": 6
-    },
-    {
-       "id": 15,
-       "title": "ಕ್ಯಾರೆಟ್",
-       "price": 60,
-       "image": "carrot.webp",
-       "selectedQuantity": 1,
-       "isKilogram": true,
-       "priceCut": 2
-    },
-    {
-       "id": 16,
-       "title": "ಕರಿಬೇವು",
-       "price": 5,
-       "image": "karibevu.webp",
-       "selectedQuantity": 1,
-       "isKilogram": false,
-       "priceCut": 8
-    },
-    {
-       "id": 17,
-       "title": "ಸಬ್ಬಸಿಗೆ",
-       "price": 5,
-       "image": "sabbe.webp",
-       "selectedQuantity": 1,
-       "isKilogram": false,
-       "priceCut": 5
-    },
-    {
-       "id": 18,
-       "title": "ಕೊತ್ತಂಬರಿ",
-       "price": 5,
-       "image": "kottambari.webp",
-       "selectedQuantity": 1,
-       "isKilogram": false,
-       "priceCut": 5
-    },
-    {
-       "id": 19,
-       "title": "ಮೆಂತ್ಯೆ",
-       "price": 5,
-       "image": "mente.webp",
-       "selectedQuantity": 1,
-       "isKilogram": false,
-       "priceCut": 5
-    },
-    {
-       "id": 20,
-       "title": "ಪುದಿನ",
-       "price": 8,
-       "image": "pudina.webp",
-       "selectedQuantity": 1,
-       "isKilogram": false,
-       "priceCut": 5
-    },
-    {
-       "id": 21,
-       "title": "ಪಾಲಕ್",
-       "price": 5,
-       "image": "palak.webp",
-       "selectedQuantity": 1,
-       "isKilogram": false,
-       "priceCut": 5
-    },
-    {
-       "id": 22,
-       "title": "ಹಸಿ ಶುಂಠಿ",
-       "price": 10,
-       "image": "shunti.webp",
-       "selectedQuantity": 1,
-       "isKilogram": false,
-       "priceCut": 5
-    },
-    {
-       "id": 23,
-       "title": "ನಿಂಬೆಹಣ್ಣು (3)",
-       "price": 10,
-       "image": "lemon.webp",
-       "selectedQuantity": 1,
-       "isKilogram": false,
-       "priceCut": 5
-    },
-    {
-      "id": 24,
-      "title": "ಅವರೆಕಾಯಿ",
-      "price": 60,
-      "image": "avare.webp",
-      "selectedQuantity": 1,
-      "isKilogram": true,
-      "priceCut": 2
+   {
+     "id": 1,
+     "title": "ಈರುಳ್ಳಿ(ಪೂನಾ)",
+     "price": 58,
+     "image": "onion.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 8
    },
    {
-      "id": 25,
-      "title": "ಬೀಟ್ರೂಟ್",
-      "price": 40,
-      "image": "beetroot.webp",
-      "selectedQuantity": 1,
-      "isKilogram": true,
-      "priceCut": 10
+     "id": 2,
+     "title": "ಈರುಳ್ಳಿ",
+     "price": 55,
+     "image": "onion2.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 8
    },
    {
-      "id": 26,
-      "title": "ಬೀನ್ಸ್",
-      "price": 150,
-      "image": "beans.webp",
-      "selectedQuantity": 1,
-      "isKilogram": true,
-      "priceCut": 2
+     "id": 3,
+     "title": "ಮೆಣಸಿನಕಾಯಿ(ಕಡ್ಡಿ)",
+     "price": 59,
+     "image": "chilli.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 10
    },
    {
-      "id": 27,
-      "title": "ನವಿಲುಕೋಸು",
-      "price": 80,
-      "image": "navilu.webp",
-      "selectedQuantity": 1,
-      "isKilogram": true,
-      "priceCut": 2
+     "id": 4,
+     "title": "ಮೆಣಸಿನಕಾಯಿ(ದಪ್ಪ)",
+     "price": 69,
+     "image": "chilli2.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 10
    },
    {
-      "id": 28,
-      "title": "ಜವಳಿಕಾಯಿ",
-      "price": 40,
-      "image": "javare.webp",
-      "selectedQuantity": 1,
-      "isKilogram": true,
-      "priceCut": 2
+     "id": 5,
+     "title": "ಟೊಮೊಟೊ ",
+     "price": 25,
+     "image": "tomato.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 12
    },
    {
-      "id": 29,
-      "title": "ನುಗ್ಗೆಕಾಯಿ",
-      "price": 60,
-      "image": "nugge.webp",
-      "selectedQuantity": 1,
-      "isKilogram": true,
-      "priceCut": 2
+     "id": 6,
+     "title": "ಆಲೂಗಡ್ಡೆ ",
+     "price": 45,
+     "image": "potato.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 10
    },
    {
-      "id": 30,
-      "title": "ಹಾಗಲಕಾಯಿ",
-      "price": 40,
-      "image": "hagala.webp",
-      "selectedQuantity": 1,
-      "isKilogram": true,
-      "priceCut": 2
+     "id": 7,
+     "title": "ಬದನೆಕಾಯಿ(ಕೆಂಪು)",
+     "price": 28,
+     "image": "brinjal.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 8
+   },
+   {
+     "id": 8,
+     "title": "ಜವಳಿಕಾಯಿ",
+     "price": 38,
+     "image": "javare.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 2
+   },
+   {
+     "id": 9,
+     "title": "ನುಗ್ಗೆಕಾಯಿ",
+     "price": 55,
+     "image": "nugge.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 2
+   },
+   {
+     "id": 10,
+     "title": "ಬದನೆಕಾಯಿ(ಹಸಿರು)",
+     "price": 48,
+     "image": "badane2.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 2
+   },
+   {
+     "id": 11,
+     "title": "ಬೆಂಡೆಕಾಯಿ",
+     "price": 35,
+     "image": "bendekai.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 12
+   },
+   {
+     "id": 12,
+     "title": "ಹೀರೆಕಾಯಿ",
+     "price": 52,
+     "image": "heerekai.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 6
+   },
+   {
+     "id": 13,
+     "title": "ಸೌತೆಕಾಯಿ",
+     "price": 38,
+     "image": "cucmber.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 6
+   },
+   {
+     "id": 14,
+     "title": "ಕ್ಯಾರೆಟ್",
+     "price": 58,
+     "image": "carrot.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 2
+   },
+   {
+     "id": 15,
+     "title": "ಹಾಗಲಕಾಯಿ",
+     "price": 38,
+     "image": "hagala.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 2
+   },
+   {
+     "id": 16,
+     "title": "ಬೀಟ್ರೂಟ್",
+     "price": 35,
+     "image": "beetroot.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 10
+   },
+   {
+     "id": 17,
+     "title": "ಬೀನ್ಸ್",
+     "price": 135,
+     "image": "beans.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 2
+   },
+   {
+     "id": 18,
+     "title": "ಹೂಕೋಸು",
+     "price": 35,
+     "image": "cauliflower.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 5
+   },
+   {
+     "id": 19,
+     "title": "ಎಲೆಕೋಸು(1)",
+     "price": 35,
+     "image": "cab.webp",
+     "selectedQuantity": 1,
+     "isKilogram": false,
+     "priceCut": 5
+   },
+   {
+     "id": 20,
+     "title": "ಸೋರೆಕಾಯಿ",
+     "price": 38,
+     "image": "sore.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 2
+   },
+   {
+     "id": 21,
+     "title": "ನವಿಲುಕೋಸು",
+     "price": 60,
+     "image": "navilu.webp",
+     "selectedQuantity": 1,
+     "isKilogram": true,
+     "priceCut": 2
+   },
+   {
+     "id": 22,
+     "title": "ಮೂಲಂಗಿ(3)",
+     "price": 14,
+     "image": "radish.webp",
+     "selectedQuantity": 1,
+     "isKilogram": false,
+     "priceCut": 9
+   },
+   {
+     "id": 23,
+     "title": "ಕರಿಬೇವು",
+     "price": 6,
+     "image": "karibevu.webp",
+     "selectedQuantity": 1,
+     "isKilogram": false,
+     "priceCut": 8
+   },
+   {
+     "id": 24,
+     "title": "ಸಬ್ಬಸಿಗೆ",
+     "price": 6,
+     "image": "sabbe.webp",
+     "selectedQuantity": 1,
+     "isKilogram": false,
+     "priceCut": 5
+   },
+   {
+     "id": 25,
+     "title": "ಕೊತ್ತಂಬರಿ",
+     "price": 6,
+     "image": "kottambari.webp",
+     "selectedQuantity": 1,
+     "isKilogram": false,
+     "priceCut": 5
+   },
+   {
+     "id": 26,
+     "title": "ಮೆಂತ್ಯೆ",
+     "price": 6,
+     "image": "mente.webp",
+     "selectedQuantity": 1,
+     "isKilogram": false,
+     "priceCut": 5
+   },
+   {
+     "id": 27,
+     "title": "ಪುದಿನ",
+     "price": 6,
+     "image": "pudina.webp",
+     "selectedQuantity": 1,
+     "isKilogram": false,
+     "priceCut": 5
+   },
+   {
+     "id": 28,
+     "title": "ಪಾಲಕ್",
+     "price": 6,
+     "image": "palak.webp",
+     "selectedQuantity": 1,
+     "isKilogram": false,
+     "priceCut": 5
+   },
+   {
+     "id": 29,
+     "title": "ಹಸಿ ಶುಂಠಿ",
+     "price": 10,
+     "image": "shunti.webp",
+     "selectedQuantity": 1,
+     "isKilogram": false,
+     "priceCut": 5
+   },
+   {
+     "id": 30,
+     "title": "ನಿಂಬೆಹಣ್ಣು (3)",
+     "price": 10,
+     "image": "lemon.webp",
+     "selectedQuantity": 1,
+     "isKilogram": false,
+     "priceCut": 5
    }
  ]

@@ -1,5 +1,6 @@
 <template>
   <div class="flex flex-col min-h-screen">
+    <Slider />
     <Shop />
   </div>
 </template>
@@ -62,6 +63,7 @@ useHead({
 });
 
 import Shop from "../components/Shop.vue";
+import Slider from "../components/Slider.vue";
 </script>
 
 <style>

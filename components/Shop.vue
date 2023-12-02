@@ -1,7 +1,7 @@
 <template>
-  <div class="container mx-auto" style="background-color: #f8fafc">
+  <div class="container mx-auto" style="background-color: #e8f0f3">
     <div>
-      <div class="sticky top-16 mb-4 z-50 bg-slate-200">
+      <div class="sticky top-16 z-50 bg-white">
         <div class="tabs font-kannada items-center">
           <a
             class="tab py-7 md:lg:py-8 content-center text-slate-900 text-lg font-semibold border-b-4 border-gray-300"
@@ -111,7 +111,7 @@
 
                   <tbody>
                     <tr
-                      v-for="(item, index) in cartItems"
+                      v-for="(item, index) in sortedCartItems"
                       :key="item.id"
                       class="border-b border-gray-300 h-9"
                     >
@@ -203,7 +203,7 @@
               <div class="divider"></div>
 
               <div
-                class="hidden sm:block md:block lg:block xl:block flex items-center my-10 justify-center bg-white"
+                class="hidden sm:block md:block lg:block xl:block items-center my-10 justify-center bg-white"
               >
                 <p class="text-center text-xl">
                   If you are on pc/laptop, login to whatsapp web & click on
@@ -273,6 +273,9 @@ export default {
     unitProducts() {
       // Filter products with isKilogram: false
       return this.products.filter((product) => product.isKilogram === false);
+    },
+    sortedCartItems() {
+      return this.cartItems.slice().sort((a, b) => a.id - b.id);
     },
   },
   methods: {

@@ -1,7 +1,7 @@
 <template>
   <div class="lg:p-0 md:p-0">
     <div
-      class="relative mx-auto flex max-w-xs flex-col overflow-hidden rounded-md border border-slate-200 bg-white"
+      class="relative mx-auto flex max-w-xs flex-col overflow-hidden rounded-xl bg-white"
     >
       <a class="relative rounded-t-md flex overflow-hidden">
         <!-- <img :src="`${product.image}`" class="object-cover" /> -->
@@ -22,9 +22,9 @@
           {{ product.title }}
         </h5>
 
-        <div class="mt-2 lg:md:mb-5 flex items-center justify-between">
+        <div class="mt-2 lg:md:mb-5 w-full flex items-center justify-between">
           <span class="text-lg md:lg:text-xl font-bold text-gogreen font-poppins"
-            >₹{{ product.price }}</span
+            ><span>₹</span>{{ product.price }}</span
           >
 
           <div v-if="product.isKilogram">

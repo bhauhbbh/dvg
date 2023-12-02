@@ -1,12 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { defineNuxtModule } from 'nuxt'
 import { resolve } from 'path';
 export default defineNuxtConfig({
 
 
 modules:[
   "@nuxt/content",
-  "@nuxt/image"
+  "@nuxt/image",
+  'nuxt-gtag',
+  'nuxt-swiper'
   ],
+  gtag: {
+    id: 'G-VCFFGDC75H'
+  },
   ssr: true,
   app: {
     head: {
@@ -29,12 +35,7 @@ modules:[
 },
 
       ],
-      script: [
-        { 
-           src: "https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js", 
-        },
-        
-       ],
+
       link: [
         {
           rel: 'stylesheet',
@@ -52,11 +53,8 @@ modules:[
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@500;600&display=swap',
         },
-        {
-          rel: 'stylesheet',
-          href: 'https://unpkg.com/flickity@2/dist/flickity.min.css',
-        },
       ],
+    
     },
   },
   devtools: { enabled: true },
