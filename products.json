@@ -2,11 +2,11 @@
    {
      "id": 1,
      "title": "ಈರುಳ್ಳಿ(ಪೂನಾ)",
-     "price": 62,
+     "price": 59,
      "image": "onion.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 8
+     "priceCut": 80
    },
    {
      "id": 2,
@@ -15,7 +15,7 @@
      "image": "onion2.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 8
+     "priceCut": 60
    },
    {
      "id": 3,
@@ -24,7 +24,7 @@
      "image": "chilli.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 10
+     "priceCut": 80 
    },
    {
      "id": 4,
@@ -33,70 +33,70 @@
      "image": "chilli2.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 10
+     "priceCut": 80
    },
    {
      "id": 5,
      "title": "ಟೊಮೊಟೊ ",
-     "price": 25,
+     "price": 20,
      "image": "tomato.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 12
+     "priceCut": 25
    },
    {
      "id": 6,
      "title": "ಆಲೂಗಡ್ಡೆ ",
-     "price": 45,
+     "price": 35,
      "image": "potato.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 10
+     "priceCut": 40
    },
    {
      "id": 7,
      "title": "ಬದನೆಕಾಯಿ(ಕೆಂಪು)",
-     "price": 38,
+     "price": 40,
      "image": "brinjal.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 8
+     "priceCut": 50
    },
    {
      "id": 8,
      "title": "ಜವಳಿಕಾಯಿ",
-     "price": 38,
+     "price": 35,
      "image": "javare.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 2
+     "priceCut": 45
    },
    {
      "id": 9,
      "title": "ನುಗ್ಗೆಕಾಯಿ",
-     "price": 79,
+     "price": 75,
      "image": "nugge.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 2
+     "priceCut": 80
    },
    {
      "id": 10,
      "title": "ಬದನೆಕಾಯಿ(ಹಸಿರು)",
-     "price": 58,
+     "price": 60,
      "image": "badane2.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 2
+     "priceCut": 80
    },
    {
      "id": 11,
      "title": "ಬೆಂಡೆಕಾಯಿ",
-     "price": 40,
+     "price": 35,
      "image": "bendekai.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 12
+     "priceCut": 40
    },
    {
      "id": 12,
@@ -105,7 +105,7 @@
      "image": "heere.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 6
+     "priceCut": 60
    },
    {
      "id": 13,
@@ -114,7 +114,7 @@
      "image": "cucmber.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 6
+     "priceCut": 60
    },
    {
      "id": 14,
@@ -123,16 +123,16 @@
      "image": "carrot.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 2
+     "priceCut": 70
    },
    {
      "id": 15,
      "title": "ಕ್ಯಾಪ್ಸಿಕಮ್",
-     "price": 60,
+     "price": 58,
      "image": "capsi.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 6
+     "priceCut": 65
    },
    {
      "id": 16,
@@ -141,16 +141,16 @@
      "image": "hagala.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 2
+     "priceCut": 45
    },
    {
      "id": 17,
      "title": "ಬೀಟ್ರೂಟ್",
-     "price": 40,
+     "price": 38,
      "image": "beetroot.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 10
+     "priceCut": 45
    },
    {
      "id": 18,
@@ -159,7 +159,7 @@
      "image": "genasu.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 10
+     "priceCut": 80
    },
    {
      "id": 19,
@@ -168,7 +168,7 @@
      "image": "beans.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 2
+     "priceCut": 140
    },
    {
      "id": 20,
@@ -177,7 +177,7 @@
      "image": "avare.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 2
+     "priceCut": 80
    },
    {
      "id": 21,
@@ -186,16 +186,16 @@
      "image": "cauliflower.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 5
+     "priceCut": 45
    },
    {
      "id": 22,
      "title": "ಎಲೆಕೋಸು(1)",
-     "price": 35,
+     "price": 25,
      "image": "cab.webp",
      "selectedQuantity": 1,
      "isKilogram": false,
-     "priceCut": 5
+     "priceCut": 30
    },
    {
      "id": 23,
@@ -204,7 +204,7 @@
      "image": "sore.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 2
+     "priceCut": 50
    },
    {
      "id": 24,
@@ -213,7 +213,7 @@
      "image": "navilu.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 2
+     "priceCut": 80
    },
    {
      "id": 25,
@@ -222,16 +222,16 @@
      "image": "radish.webp",
      "selectedQuantity": 1,
      "isKilogram": false,
-     "priceCut": 9
+     "priceCut": 0
    },
    {
      "id": 26,
      "title": "ಕರಿಬೇವು",
-     "price": 6,
+     "price": 5,
      "image": "karibevu.webp",
      "selectedQuantity": 1,
      "isKilogram": false,
-     "priceCut": 8
+     "priceCut": 0
    },
    {
      "id": 27,
@@ -240,7 +240,7 @@
      "image": "sabbe.webp",
      "selectedQuantity": 1,
      "isKilogram": false,
-     "priceCut": 5
+     "priceCut": 0
    },
    {
      "id": 28,
@@ -249,7 +249,7 @@
      "image": "kottambari.webp",
      "selectedQuantity": 1,
      "isKilogram": false,
-     "priceCut": 5
+     "priceCut": 0
    },
    {
      "id": 29,
@@ -258,7 +258,7 @@
      "image": "mente.webp",
      "selectedQuantity": 1,
      "isKilogram": false,
-     "priceCut": 5
+     "priceCut": 0
    },
    {
      "id": 30,
@@ -267,7 +267,7 @@
      "image": "pudina.webp",
      "selectedQuantity": 1,
      "isKilogram": false,
-     "priceCut": 5
+     "priceCut": 0
    },
    {
      "id": 31,
@@ -276,7 +276,7 @@
      "image": "palak.webp",
      "selectedQuantity": 1,
      "isKilogram": false,
-     "priceCut": 5
+     "priceCut": 0
    },
    {
      "id": 32,
@@ -285,7 +285,7 @@
      "image": "shunti.webp",
      "selectedQuantity": 1,
      "isKilogram": false,
-     "priceCut": 5
+     "priceCut": 0
    },
    {
      "id": 33,
@@ -294,15 +294,6 @@
      "image": "lemon.webp",
      "selectedQuantity": 1,
      "isKilogram": false,
-     "priceCut": 5
-   },
-   {
-     "id": 34,
-     "title": "ವೀಳ್ಯದೆಲೆ",
-     "price": 10,
-     "image": "ele.webp",
-     "selectedQuantity": 1,
-     "isKilogram": false,
-     "priceCut": 5
+     "priceCut": 0
    }
  ]
