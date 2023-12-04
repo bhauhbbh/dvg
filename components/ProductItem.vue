@@ -13,7 +13,7 @@
         />
       </a>
       <div class="p-4 md:lg:mt-2 md:lg:px-5 md:lg:pb-6">
-        <h5 class="text-base tracking-tight font-bold font-kannada text-gray-900">
+        <h5 class="text-base tracking-tight font-bold font-kannada strike text-gray-900">
           {{ product.title }}
         </h5>
 
@@ -26,8 +26,8 @@
 
             <span
               v-show="product.priceCut > 0"
-              class="block text-left text-md font-bold text-black"
-              ><s>₹{{ product.priceCut }}</s></span
+              class="block text-left text-md font-normal text-red-400 line-through font-poppins"
+              >₹{{ product.priceCut }}</span
             >
           </div>
 
@@ -140,7 +140,7 @@ strike {
 }
 s::before,
 strike::before {
-  top: 50%; /*tweak this to adjust the vertical position if it's off a bit due to your font family */
+  top: 45%; /*tweak this to adjust the vertical position if it's off a bit due to your font family */
   background: #000; /*this is the color of the line*/
   opacity: 0.9;
   content: "";
