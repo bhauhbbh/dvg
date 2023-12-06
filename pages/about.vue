@@ -21,9 +21,13 @@
           target="_blank"
           rel="noreferrer noopener"
         >
-          <span class="text-white">Feedback / Enquiry </span>
+          <span class="text-white">click here for Enquiry </span>
         </a>
       </button>
+
+      <span class="text-slate-600 pb-4 ml-4 font-semibold" style="user-select: none"
+        >7619427699</span
+      >
 
       <button
         type="button"

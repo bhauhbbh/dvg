@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar sticky top-0 z-50 bg-white justify-between">
+  <div class="navbar shadow sticky top-0 z-50 bg-white justify-between">
     <div class="flex-1 justify-between">
       <nuxt-link to="https://hbhalli.com/" class="flex items-center justify-center">
         ❤️
@@ -11,12 +11,6 @@
         >
       </NuxtLink>
     </div>
-
-    <!-- <NuxtLink
-      to="/about"
-      class="info btn-link text-black content-center font-semibold text-base focus:ring-violet-300 font-kannada"
-      >ಹೆಚ್ಚಿನ ಮಾಹಿತಿ</NuxtLink
-    > -->
 
     <button
       class="md:lg:hidden btn btn-sm border-none bg-blue-600 hover:bg-blue-500 text-white font-poppins font-semibold ml-4 rounded-full"
