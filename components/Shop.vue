@@ -113,7 +113,8 @@
                     <tr
                       v-for="(item, index) in sortedCartItems"
                       :key="item.id"
-                      class="border-b border-gray-300 h-9"
+                      class="border-b border-gray-200 h-9"
+                      :class="{ 'bg-gray-100': index % 2 !== 0 }"
                     >
                       <td>
                         <span class="font-kannada"> {{ item.title }}</span> ·

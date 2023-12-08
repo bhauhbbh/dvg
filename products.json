@@ -2,7 +2,7 @@
    {
      "id": 1,
      "title": "ಈರುಳ್ಳಿ(ಪೂನಾ)",
-     "price": 59,
+     "price": 70,
      "image": "onion.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
@@ -11,7 +11,7 @@
    {
      "id": 2,
      "title": "ಈರುಳ್ಳಿ",
-     "price": 49,
+     "price": 55,
      "image": "onion2.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
@@ -20,7 +20,7 @@
    {
      "id": 3,
      "title": "ಮೆಣಸಿನಕಾಯಿ(ಕಡ್ಡಿ)",
-     "price": 53,
+     "price": 60,
      "image": "chilli.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
@@ -29,7 +29,7 @@
    {
      "id": 4,
      "title": "ಮೆಣಸಿನಕಾಯಿ(ದಪ್ಪ)",
-     "price": 58,
+     "price": 70,
      "image": "chilli2.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
@@ -47,29 +47,29 @@
    {
      "id": 6,
      "title": "ಆಲೂಗಡ್ಡೆ ",
-     "price": 35,
+     "price": 40,
      "image": "potato.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 40
+     "priceCut": 45
    },
    {
      "id": 7,
      "title": "ಬದನೆಕಾಯಿ(ಕೆಂಪು)",
-     "price": 40,
+     "price": 50,
      "image": "brinjal.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 50
+     "priceCut": 60
    },
    {
      "id": 8,
      "title": "ಜವಳಿಕಾಯಿ",
-     "price": 35,
+     "price": 50,
      "image": "javare.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 45
+     "priceCut": 60
    },
    {
      "id": 9,
@@ -92,20 +92,20 @@
    {
      "id": 11,
      "title": "ಬೆಂಡೆಕಾಯಿ",
-     "price": 35,
+     "price": 40,
      "image": "bendekai.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 40
+     "priceCut": 60
    },
    {
      "id": 12,
      "title": "ಹೀರೆಕಾಯಿ",
-     "price": 40,
+     "price":60,
      "image": "heere.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 60
+     "priceCut": 80
    },
    {
      "id": 13,
@@ -119,11 +119,11 @@
    {
      "id": 14,
      "title": "ಕ್ಯಾರೆಟ್",
-     "price": 58,
+     "price": 62,
      "image": "carrot.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 70
+     "priceCut": 75
    },
    {
      "id": 15,
@@ -137,20 +137,20 @@
    {
      "id": 16,
      "title": "ಹಾಗಲಕಾಯಿ",
-     "price": 38,
+     "price": 40,
      "image": "hagala.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 45
+     "priceCut": 60
    },
    {
      "id": 17,
      "title": "ಬೀಟ್ರೂಟ್",
-     "price": 38,
+     "price": 60,
      "image": "beetroot.webp",
      "selectedQuantity": 1,
      "isKilogram": true,
-     "priceCut": 45
+     "priceCut": 70
    },
    {
      "id": 18,
