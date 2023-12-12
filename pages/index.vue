@@ -1,11 +1,30 @@
 <template>
   <div class="flex flex-col min-h-screen">
     <Slider />
-    <Shop />
+    <Shop :products="products" :soppu="soppu" :hannu="hannu" :kaayi="kaayi" />
   </div>
 </template>
 
 <script setup>
+const supabase = useSupabaseClient();
+const { data: products, error } = await supabase
+  .from("products")
+  .select("*")
+  .order("id", { ascending: true });
+
+const kaayi = products.slice(0, 24);
+const soppu = products.slice(24, 33);
+const hannu = products.slice(24, 32);
+console.log("kaayi:", kaayi);
+console.log("soppu:", soppu);
+console.log("hannu:", hannu);
+
+if (error) {
+  console.log(error);
+} else {
+  console.log("index.vue", products);
+}
+
 const description =
   "Hbhalli.com - Order vegetables everyday morning. 7 am delivery guaranteed";
 const ogTitle = "Hbhalli.com - Order vegetables everyday!";

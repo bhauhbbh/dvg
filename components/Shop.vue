@@ -2,39 +2,54 @@
   <div class="container mx-auto" style="background-color: #e8f0f3">
     <div>
       <div class="sticky top-16 z-50 shadow bg-white">
-        <div class="tabs font-kannada items-center">
+        <div class="tabs font-kannada justify-start items-center">
           <a
-            class="tab py-7 md:lg:py-8 content-center text-slate-900 text-lg font-bold border-b-4 border-gray-300"
+            class="tab px-3 p-1 py-7 md:lg:py-8 content-center text-slate-900 text-lg font-bold border-b-4 border-gray-300"
             :class="{ 'tab-active': activeTab === 'Tab1' }"
             @click="changeTab('Tab1')"
           >
-            <img
+            <!-- <img
               src="/carrot.png"
               alt="ತರಕಾರಿ"
-              class="h-7 w-7 mr-2 grayscale opacity-90"
+              class="h-6 w-6 mr-1 grayscale opacity-90"
               :class="{ 'grayscale-0 opacity-100': activeTab === 'Tab1' }"
               @click="changeTab('Tab1')"
-            />
-            ತರಕಾರಿ
+            /> -->
+            🥕 ತರಕಾರಿ
           </a>
 
           <a
-            class="tab py-7 md:lg:py-8 content-center text-slate-900 text-lg font-semibold border-b-4 border-gray-300"
+            class="tab px-3 p-1 py-7 md:lg:py-8 content-center text-slate-900 text-lg font-semibold border-b-4 border-gray-300"
             :class="{ 'tab-active border-b-4': activeTab === 'Tab2' }"
             @click="changeTab('Tab2')"
           >
-            <img
+            <!-- <img
               src="/organic.png"
               alt="ಸೊಪ್ಪು"
-              class="h-8 w-8 mr-2 grayscale opacity-90"
+              class="h-6 w-6 mr-1 grayscale opacity-90"
               :class="{ 'grayscale-0 opacity-100': activeTab === 'Tab2' }"
               @click="changeTab('Tab1')"
-            />
-            ಸೊಪ್ಪು</a
+            /> -->
+            🌿 ಸೊಪ್ಪು</a
           >
 
+          <!-- <a
+            class="tab p-1 py-7 md:lg:py-8 content-center text-slate-900 text-lg font-semibold border-b-4 border-gray-300"
+            :class="{ 'tab-active border-b-4': activeTab === 'Tab4' }"
+            @click="changeTab('Tab4')"
+          > -->
+          <!-- <img
+              src="/organic.png"
+              alt="ಸೊಪ್ಪು"
+              class="h-6 w-6 mr-1 grayscale opacity-90"
+              :class="{ 'grayscale-0 opacity-100': activeTab === 'Tab2' }"
+              @click="changeTab('Tab1')"
+            /> -->
+          <!-- 🍎 ಹಣ್ಣು</a
+          > -->
+
           <button
-            class="flex py-1 px-4 relative mb-2 bg-orange-400 border-2 border-transparent text-gray-800 rounded-full focus:outline-none transition duration-150 ease-in-out ml-5"
+            class="flex px-4 ml-4 p-1 py-1 px-2 relative mb-1 bg-orange-400 border-2 border-transparent text-gray-800 rounded-full focus:outline-none ml-2"
             aria-label="Cart"
             :class="{ 'tab-active': activeTab === 'Tab3' }"
             @click="changeTab('Tab3')"
@@ -58,16 +73,15 @@
           </button>
         </div>
       </div>
-
       <div v-if="activeTab === 'Tab1'">
         <!-- Content for Tab 1 -->
         <div
           class="grid grid-cols-2 gap-2 p-3 md:gap-4 lg:gap-4 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-5"
         >
           <ProductItem
-            v-for="product in kilogramProducts"
-            :key="product.id"
-            :product="product"
+            v-for="products in kaayi"
+            :key="products.id"
+            :product="products"
             :cartItems="cartItems"
             @add-to-cart="addToCart"
             @remove-from-cart="removeFromCart"
@@ -80,9 +94,9 @@
           class="grid grid-cols-2 gap-2 p-3 md:gap-4 lg:gap-4 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-5"
         >
           <ProductItem
-            v-for="product in unitProducts"
-            :key="product.id"
-            :product="product"
+            v-for="products in soppu"
+            :key="products.id"
+            :product="products"
             :cartItems="cartItems"
             @add-to-cart="addToCart"
             @remove-from-cart="removeFromCart"
@@ -249,7 +263,6 @@
 
 <script>
 import ProductItem from "~/components/ProductItem.vue";
-import productsData from "/products.json";
 
 export default {
   components: {
@@ -262,10 +275,28 @@ export default {
       tab: ["Tab1"],
       activeTab: "Tab1",
       minCartValue: 250,
-      products: productsData,
       cartItems: [],
     };
   },
+  props: {
+    products: {
+      type: Object,
+      require: true,
+    },
+    soppu: {
+      type: Object,
+      require: true,
+    },
+    hannu: {
+      type: Object,
+      require: true,
+    },
+    kaayi: {
+      type: Object,
+      require: true,
+    },
+  },
+
   computed: {
     kilogramProducts() {
       // Filter products with isKilogram: true
@@ -326,7 +357,7 @@ export default {
     },
 
     generateWhatsAppMessage() {
-      let message = "Order Details: \n";
+      let message = "Order Details: hbhalli.com \n";
       this.cartItems.forEach((item) => {
         message += `${item.title} ∙ ₹${item.price} ∙ ${
           item.isKilogram ? `${item.selectedQuantity} kg` : `${item.selectedQuantity}`

@@ -86,6 +86,12 @@
           {{ isInCart ? "Remove" : "Add" }}
         </button>
       </div>
+      <div
+        class="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center text-center justify-center text-white font-bold text-2xl"
+        v-show="!product.available"
+      >
+        Not available today
+      </div>
     </div>
   </div>
 </template>

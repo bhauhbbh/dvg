@@ -8,8 +8,12 @@ modules:[
   "@nuxt/content",
   "@nuxt/image",
   'nuxt-gtag',
-  'nuxt-swiper'
+  'nuxt-swiper',
+  '@nuxtjs/supabase'
   ],
+  supabase: {
+    redirect: false,
+  },
   gtag: {
     id: 'G-VCFFGDC75H'
   },
