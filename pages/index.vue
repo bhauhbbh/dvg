@@ -19,11 +19,11 @@ const hannu = products.slice(24, 32);
 // console.log("soppu:", soppu);
 // console.log("hannu:", hannu);
 
-if (error) {
-  console.log(error);
-} else {
-  console.log("index.vue", products);
-}
+// if (error) {
+//   console.log(error);
+// } else {
+//   console.log("index.vue", products);
+// }
 
 const description =
   "Hbhalli.com - Order vegetables everyday morning. 7 am delivery guaranteed";

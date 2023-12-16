@@ -9,9 +9,30 @@ modules:[
   "@nuxt/image",
   'nuxt-gtag',
   'nuxt-swiper',
-  '@nuxtjs/supabase'
-  ],
-  supabase: {
+  '@nuxtjs/supabase',
+  '@vite-pwa/nuxt'
+],
+pwa: {
+  manifest: {
+  name: 'hbhalli.com',
+  short_name: 'hbhalli',
+  description: '7am vegetables delivery, everyday!',
+  theme_color: '#ffffff',
+  icons: [
+    {
+      src: '/icon_192x192.png',
+      sizes: '192x192',
+      type: 'image/png',
+    },
+   ],
+  },
+  devOptions: {
+    enabled: true,
+    type: 'module',
+  },
+},
+
+supabase: {
     redirect: false,
   },
   gtag: {

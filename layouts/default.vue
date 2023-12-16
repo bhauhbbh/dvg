@@ -28,6 +28,7 @@ export default {
         <p class="text-center">We are updating site, please come back after sometime.</p>
       </div>
     </div> -->
+    <NuxtPwaManifest />
     <Header />
     <NuxtPage />
     <Footer />
