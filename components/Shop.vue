@@ -49,7 +49,7 @@
           > -->
 
           <button
-            class="flex px-4 ml-4 p-1 py-1 px-2 relative mb-1 bg-orange-400 border-2 border-transparent text-gray-800 rounded-full focus:outline-none ml-2"
+            class="flex px-4 ml-4 p-1 py-1 relative mb-1 bg-orange-400 border-2 border-transparent text-gray-800 rounded-full focus:outline-none"
             aria-label="Cart"
             :class="{ 'tab-active': activeTab === 'Tab3' }"
             @click="changeTab('Tab3')"

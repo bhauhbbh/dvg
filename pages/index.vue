@@ -15,9 +15,9 @@ const { data: products, error } = await supabase
 const kaayi = products.slice(0, 24);
 const soppu = products.slice(24, 33);
 const hannu = products.slice(24, 32);
-console.log("kaayi:", kaayi);
-console.log("soppu:", soppu);
-console.log("hannu:", hannu);
+// console.log("kaayi:", kaayi);
+// console.log("soppu:", soppu);
+// console.log("hannu:", hannu);
 
 if (error) {
   console.log(error);
